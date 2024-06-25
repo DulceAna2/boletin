@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Boletin CET Nª30</h3>
+    <form action="">
+        <fieldset id="primera">
+            <label for="">Nombre y Apellido</label>
+            <input type="text" id="nombre">
+            <br>
+            <label for="">Curso</label>
+            <select name="" id="curso">
+                <option value="" disabled selected>Seleccione el curso</option>
+                <option value="5ª1" >5ª1</option>
+                <option value="5ª2">5ª2</option>
+                <option value="5ª3">5ª3</option>
+                <option value="5ª4">5ª4</option>
+            </select>
+            <br>
+            <label for="">Año</label>
+            <input type="number" id="año">
+            <br>
+            <input type="button" value="Cargar Alumno"  onclick="cargarDatos()" >
+        </fieldset>
+        <fieldset id="segunda">
+            <label for="">Materia</label>
+            <select name=""  id="mm">
+                <option value="" disabled selected>Seleccione la materia</option>
+                <option value="Discreta Matematica"> Discreta Matematica</option>
+                <option value="Estadistica">Estadistica</option>
+                <option value="Analisis Matematico I">Analisis Matematico I</option>
+                <option value="Historia">Historia</option>
+                <option value="Comunicacion Oral y Escrita">Comunicacion Oral y Escrita</option>
+                <option value="Base de Datos">Base de Datos</option>
+
+            </select>
+            <br>
+            <label for="">Primer Cuatrimestre</label>
+            <input type="number" min="1" max="10" id="pcuatri">
+            <br>
+            <label for="">Segundo Cuatrimestre</label>
+            <input type="number" min="1" max="10" id="scuatri">
+            <br>
+            <input type="button" value="Subir materia"  disabled onclick="subirMateria()" id="boton" >
+        </fieldset>
+        <div id="membrete"> </div>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Materia</th>
+                    <th>1er Cuatrimestre</th>
+                    <th>2do Cuatrimestre</th>
+                    <th>Promedio final</th>
+                </tr>
+            </thead>
+            <tbody id="spadre">
+            </tbody>
+            <tfoot>
+                <td colspan="4" id="pro"></td>
+            </tfoot>
+        </table>
+        <input type="button" value="Imprimir" id="imprimir" disabled onclick="Imprimir()"  >
+
+    </form>
+    <script src="d.js"></script>
+
+</body>
+
+</html>

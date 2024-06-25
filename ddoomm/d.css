@@ -1,0 +1,6 @@
+.tabla{
+    table-layout: fixed;
+    width: 100%;
+    border:10px;
+    background-color:aqua;
+}
